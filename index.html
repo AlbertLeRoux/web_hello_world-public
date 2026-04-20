@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ClearPath CRO Consulting</title>
+  <meta name="description" content="Regulatory strategy, study design, monitoring, and data management for clinical research." />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>ClearPath CRO Consulting</h1>
+      <p class="tag">Regulatory strategy • Study design • Monitoring • Data management</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <h2>About</h2>
+      <p>We provide pragmatic clinical research consulting for early-phase and specialty trials. Services include protocol development, regulatory submissions, data management, monitoring plans, and vendor oversight.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Protocol & statistical plan review</li>
+        <li>Regulatory strategy & IND/IDE support</li>
+        <li>Data management & database design</li>
+        <li>Monitoring & quality assurance</li>
+        <li>Vendor selection and oversight</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact & Comments</h2>
+      <p>Have a question or a potential project? Leave a short message below.</p>
+
+      <form id="commentForm" action="/comments" method="post" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" id="name" maxlength="100" required>
+        </label>
+
+        <label>
+          Email (optional)
+          <input type="email" name="email" id="email" maxlength="254" placeholder="you@example.com">
+        </label>
+
+        <label class="visually-hidden">
+          Leave this blank
+          <input type="text" name="hp" id="hp" autocomplete="off">
+        </label>
+
+        <label>
+          Message
+          <textarea name="comment" id="comment" rows="5" maxlength="2000" required></textarea>
+        </label>
+
+        <button type="submit">Send message</button>
+        <div id="formStatus" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> ClearPath CRO Consulting</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
+
