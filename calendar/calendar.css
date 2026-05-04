@@ -1,0 +1,25 @@
+body {
+  font-family: system-ui, sans-serif;
+  padding: 1rem;
+}
+
+#calendar-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+}
+
+.calendar-grid button {
+  padding: 0.5rem;
+}
+
+#time-slots button {
+  margin: 0.25rem;
+}
