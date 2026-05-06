@@ -18,8 +18,32 @@ body {
 
 .calendar-grid button {
   padding: 0.5rem;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.calendar-grid button:hover {
+  background: #e0e0e0;
 }
 
 #time-slots button {
   margin: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #888;
+  background: #fff;
+  cursor: pointer;
 }
+
+#time-slots button:hover {
+  background: #f0f0f0;
+}
+
+#calendar {
+  margin-bottom: 1.5rem;
+}
+
+#slots h2 {
+  margin-bottom: 0.5rem;
+}
+

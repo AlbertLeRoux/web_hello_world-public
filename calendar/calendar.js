@@ -60,4 +60,12 @@ document.getElementById("next").onclick = () => {
   renderCalendar(currentDate);
 };
 
+
 renderCalendar(currentDate);
+
+// Automatically load slots for today on initial render
+loadSlots(
+  currentDate.getFullYear(),
+  currentDate.getMonth(),
+  currentDate.getDate()
+);
