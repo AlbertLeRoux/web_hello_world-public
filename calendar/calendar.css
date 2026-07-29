@@ -27,6 +27,11 @@ body {
   background: #e0e0e0;
 }
 
+.calendar-grid button.available {
+  background: #d8f0d8;
+  border-color: #6fa36f;
+}
+
 #time-slots button {
   margin: 0.25rem;
   padding: 0.5rem 0.75rem;
