@@ -48,4 +48,4 @@ Desktop.ini
 *.swp
 
 # Backups
-.bak
+*.bak
