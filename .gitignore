@@ -47,3 +47,5 @@ Desktop.ini
 .idea/
 *.swp
 
+# Backups
+.bak
