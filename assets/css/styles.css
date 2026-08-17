@@ -89,19 +89,6 @@ section {
   /* border: 2px solid red; Border used during debugging*/
 }
 
-/*.site-header p {
-  max-width: 720px;
-
-  margin: 0.65rem 0 0;
-}
-
- .site-header p:last-child {
-  margin-bottom: 0;
-  font-size: 1.1rem;
-  color: var(--muted);
-}
- */
-
 /* Hero Section */
 .hero-header {
   max-width: 800px;
