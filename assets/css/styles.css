@@ -1,15 +1,23 @@
 :root {
   /* CoreGxP visual identity: cool biotech blue + slate */
-  --accent: #1f5faa;
-  --accent-dark: #174a85;
+  /* CoreGxp brand colors */
+  --accent: #0b2f6b;
+  --accent-dark: #071f47;
+  --accent-light: #2d7fcf;
 
+  --gold: #c79a3b;
+  --gold-muted: #ead9ae;
+
+  --header-bg: #ffffff;
+
+  /* Supporting Colors */
   --text: #0f172a;
   --muted: #5b6677;
 
   --bg: #ffffff;
   --surface: #ffffff;
   --surface-2: #fbfcff;
-  --header-bg: #f6f8fc;
+  /*--header-bg: #f6f8fc;*/
 
   --border: #e3eaf4;
   --field-border: #cfd9e6;
@@ -71,14 +79,45 @@ section {
   padding: 2.75rem 1rem 2.25rem;
 }
 
-.site-header p {
+.site-logo {
+  background: var(--header-bg);
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  /* border: 2px solid red; Border used during debugging*/
+}
+
+/*.site-header p {
   max-width: 720px;
+
   margin: 0.65rem 0 0;
 }
 
-.site-header p:last-child {
+ .site-header p:last-child {
   margin-bottom: 0;
   font-size: 1.1rem;
+  color: var(--muted);
+}
+ */
+
+/* Hero Section */
+.hero-header {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-supporting {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.hero-tagline {
+  margin-top: 0.75rem;
+  font-size: 1.15rem;
   color: var(--muted);
 }
 
@@ -112,13 +151,6 @@ li {
   color: color-mix(in srgb, var(--text) 95%, transparent);
 }
 
-.tag {
-  color: var(--accent);
-  margin: 0 0 1rem;
-  font-size: 1rem;
-  font-weight: 650;
-  letter-spacing: 0.02em;
-}
 
 /* Highlight cards */
 .highlights-grid {
