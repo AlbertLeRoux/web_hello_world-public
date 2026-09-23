@@ -1,27 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Appointment Calendar</title>
-  <link rel="stylesheet" href="/calendar/calendar.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schedule a Consultation | CoreGxP LLC</title>
+
+    <link rel="icon" href="/assets/img/brand/coregxp-logo-mark-v1-32.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">  
 </head>
 <body>
+<header class="site-header">
+    <div class="wrap">
 
-  <h1>Available Appointments</h1>
+        <img
+            class="site-logo"
+            src="/assets/img/brand/coregxp-logo-v1.svg"
+            alt="CoreGxP LLC">
 
-  <div id="calendar-controls">
-    <button id="prev">‹</button>
-    <span id="month-label"></span>
-    <button id="next">›</button>
-  </div>
+        <div class="hero-header">
+            <h1>Schedule a Consultation</h1>
 
-  <div id="calendar"></div>
+            <p class="hero-supporting">
+                Thank you for your interest. Use the calendar below to schedule
+                an introductory discussion.  Consultations are provided without
+                obligation and are intended to explore your goals, challenges,
+                and potential opportunities for collaboration.
 
-  <div id="slots">
-    <h2>Available Times</h2>
-    <div id="time-slots"></div>
-  </div>
+            </p>
+        </div>
 
-  <script src="/calendar/calendar.js"></script>
+    </div>
+</header>
+
+<main>
+
+    <section class="wrap">
+
+        <h2>Select an Available Time</h2>
+
+        <p>
+            Select a convenient time from the availability shown below.
+            If you do not see a suitable time, please use the contact form
+            and I will be happy to coordinate directly.
+        </p>
+
+    </section>
+    
+      <div style="max-width: 1072px; margin: 2rem auto; padding: 0 1.5rem; height: 1800px; box-sizing: border-box;">
+
+          <iframe
+              src="https://bookings.cloud.microsoft/book/CoreGxPLLC1@coregxp.com/?ismsaljsauthenabled"
+              width="100%"
+              height="100%"
+              scrolling="no"
+              style="border:0;"
+              title="CoreGxP Consultation Scheduling">
+          </iframe>
+
+      </div>
+
+
+</main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav class="footer-nav">
+          <a href="/">Home</a>
+          <a href="/privacy/">Privacy Policy</a>
+      </nav>
+      
+      <p>&copy; <span id="year"></span> CoreGxP LLC</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js"></script> 
+  
 </body>
 </html>
