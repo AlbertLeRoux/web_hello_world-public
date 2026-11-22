@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Audit Availability | CoreGxP LLC</title>
+
+    <meta
+      name="description"
+      content="Current CoreGxP audit availability by ISO week."
+    />
+
+    <link
+      rel="icon"
+      href="/assets/img/brand/coregxp-logo-mark-v1-32.png"
+    >
+
+    <link
+      rel="stylesheet"
+      href="/dev2/styles.css"
+    >
+  </head>
+
+  <body>
+
+    <header class="site-header">
+      <div class="wrap">
+
+        <a href="/" aria-label="CoreGxP LLC home">
+          <img
+            class="site-logo"
+            src="/assets/img/brand/coregxp-logo-v1.svg"
+            alt="CoreGxP LLC"
+          >
+        </a>
+
+        <div class="hero-header">
+
+          <h1>Audit Availability</h1>
+
+          <p class="hero-supporting">
+            A simplified view of current CoreGxP audit capacity.
+          </p>
+
+        </div>
+      </div>
+    </header>
+
+
+    <main class="wrap">
+
+      <section
+        class="availability-notice"
+        aria-labelledby="availability-notice-heading"
+      >
+
+        <h2 id="availability-notice-heading">
+          Planning Note
+        </h2>
+
+        <p>
+          Availability is provided for planning purposes and may change at
+          any time. Displayed availability does not reserve or guarantee
+          CoreGxP capacity.
+        </p>
+
+      </section>
+
+
+      <section
+        class="availability-section"
+        aria-labelledby="availability-heading"
+      >
+
+        <h2 id="availability-heading">
+          Current Audit Availability
+        </h2>
+
+        <div class="availability-navigation">
+
+          <button
+            type="button"
+            id="previousMonth"
+            disabled
+          >
+            &larr; Previous
+          </button>
+
+          <button
+            type="button"
+            id="nextMonth"
+          >
+            Next &rarr;
+          </button>
+
+        </div>
+
+        <div class="availability-grid"
+          id="availabilityGrid">
+
+
+
+        </div>
+
+
+        <p class="availability-contact">
+          Need to discuss a specific audit window?
+          <a href="/#contact">Contact CoreGxP</a>.
+        </p>
+
+      </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+      <div class="wrap">
+
+        <nav class="footer-nav">
+          <a href="/">Home</a>
+          <a href="/privacy/">Privacy Policy</a>
+        </nav>
+
+        <p>
+          &copy; <span id="year"></span> CoreGxP LLC
+        </p>
+
+      </div>
+    </footer>
+
+
+    <script src="/assets/js/site.js"></script>
+    <script src="/dev2/availability.js"></script>
+
+  </body>
+</html>
