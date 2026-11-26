@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+
+    <title>
+      Administrator Passkey Registration | CoreGxP LLC
+    </title>
+
+    <meta
+      name="description"
+      content="Temporary CoreGxP administrator passkey registration."
+    >
+
+    <link
+      rel="icon"
+      href="/assets/img/brand/coregxp-logo-mark-v1-32.png"
+    >
+
+    <link
+      rel="stylesheet"
+      href="/admin/register/styles.css"
+    >
+  </head>
+
+  <body>
+
+    <main class="registration-page">
+
+      <section
+        class="registration-card"
+        aria-labelledby="registration-heading"
+      >
+
+        <a
+          class="brand-link"
+          href="/"
+          aria-label="CoreGxP LLC home"
+        >
+          <img
+            class="site-logo"
+            src="/assets/img/brand/coregxp-logo-v1.svg"
+            alt="CoreGxP LLC"
+          >
+        </a>
+
+        <h1 id="registration-heading">
+          Administrator Passkey Registration
+        </h1>
+
+        <p class="registration-introduction">
+          Enter the administrator username and the temporary enrollment
+          phrase created through the server.
+        </p>
+
+        <form id="registrationForm">
+
+          <div class="form-field">
+            <label for="username">
+              Username
+            </label>
+
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              autocomplete="username"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="phrase">
+              Enrollment phrase
+            </label>
+
+            <input
+              type="password"
+              id="phrase"
+              name="phrase"
+              autocomplete="off"
+              required
+            >
+          </div>
+
+          <button
+            type="submit"
+            id="registerButton"
+          >
+            Register passkey
+          </button>
+
+        </form>
+
+        <p
+          id="registrationStatus"
+          class="registration-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+      </section>
+
+    </main>
+
+    <script
+      src="/admin/register/simplewebauthn-browser.js"
+    ></script>
+
+    <script
+      src="/admin/register/register.js"
+    ></script>
+
+  </body>
+</html>
