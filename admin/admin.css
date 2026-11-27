@@ -1,0 +1,148 @@
+:root {
+  color-scheme: light;
+
+  --background: #f5f7fa;
+  --surface: #ffffff;
+  --text: #192536;
+  --muted: #5f6878;
+  --border: #d7dde5;
+  --accent: #006fbb;
+  --accent-hover: #005b99;
+  --success: #176f3a;
+  --error: #a4262c;
+  --focus: #ffbf47;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  background: var(--background);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.admin-page {
+  display: grid;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  place-items: center;
+}
+
+.admin-card {
+  width: min(100%, 34rem);
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.75rem 2rem rgb(20 35 55 / 10%);
+}
+
+.brand-link {
+  display: inline-block;
+}
+
+.site-logo {
+  display: block;
+  width: min(14rem, 100%);
+  height: auto;
+}
+
+h1 {
+  margin: 1.75rem 0 0.75rem;
+  font-size: clamp(1.7rem, 5vw, 2.25rem);
+  line-height: 1.15;
+}
+
+.admin-introduction {
+  margin: 0 0 1.75rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.form-field {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.75rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  font: inherit;
+}
+
+input:focus,
+button:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+button {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  background: var(--accent);
+  border: 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+button:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.authentication-status {
+  min-height: 1.5rem;
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.authentication-status.is-success {
+  color: var(--success);
+  font-weight: 700;
+}
+
+.authentication-status.is-error {
+  color: var(--error);
+  font-weight: 700;
+}
+
+.authenticated-content {
+  margin-top: 1.75rem;
+  padding: 1rem;
+  background: #edf7f0;
+  border: 1px solid #b9d9c2;
+  border-radius: 0.4rem;
+}
+
+.authenticated-content h2 {
+  margin-top: 0;
+  color: var(--success);
+}

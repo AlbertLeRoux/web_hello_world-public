@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+
+    <title>
+      Administration | CoreGxP LLC
+    </title>
+
+    <meta
+      name="description"
+      content="CoreGxP administrator access."
+    >
+
+    <link
+      rel="icon"
+      href="/assets/img/brand/coregxp-logo-mark-v1-32.png"
+    >
+
+    <link
+      rel="stylesheet"
+      href="/admin/admin.css"
+    >
+  </head>
+
+  <body>
+
+    <main class="admin-page">
+
+      <section
+        class="admin-card"
+        aria-labelledby="admin-heading"
+      >
+
+        <a
+          class="brand-link"
+          href="/"
+          aria-label="CoreGxP LLC home"
+        >
+          <img
+            class="site-logo"
+            src="/assets/img/brand/coregxp-logo-v1.svg"
+            alt="CoreGxP LLC"
+          >
+        </a>
+
+        <h1 id="admin-heading">
+          CoreGxP Administration
+        </h1>
+
+        <p class="admin-introduction">
+          Authenticate with a registered passkey to continue.
+        </p>
+
+        <form id="authenticationForm"
+              hidden>
+
+          <div class="form-field">
+            <label for="username">
+              Username
+            </label>
+
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              autocomplete="username"
+              required
+            >
+          </div>
+
+          <button
+            type="submit"
+            id="signInButton"
+          >
+            Sign in with passkey
+          </button>
+
+        </form>
+
+        <section
+          id="authenticatedContent"
+          class="authenticated-content"
+          hidden
+        >
+          <h2>
+            Authentication successful
+          </h2>
+
+          <p>
+            Signed in as
+            <strong id="authenticatedName"></strong>.
+          </p>
+        </section>
+
+        <p
+          id="authenticationStatus"
+          class="authentication-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+      </section>
+
+    </main>
+
+    <script
+      src="/admin/register/simplewebauthn-browser.js"
+    ></script>
+
+    <script
+      src="/admin/admin.js"
+    ></script>
+
+  </body>
+</html>
